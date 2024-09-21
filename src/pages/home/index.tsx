@@ -1,13 +1,10 @@
 import { Container, Main, Wrapper } from "@app-components";
-import { useDeviceType } from "@app-hooks";
 import Navigation from "./navigation";
 import Trending from "./trending";
 import Introduction from "./introduction";
 import NewsFeed from "./news-feed";
 
 export default function Home() {
-  const DeviceType = useDeviceType()
-
   return (
     <Main className="bg-white-almost px-4 py-7 flex flex-col items-center gap-[32px]">
       <Navigation />

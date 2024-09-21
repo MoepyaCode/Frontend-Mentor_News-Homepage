@@ -7,9 +7,8 @@ export function useDeviceType() {
     useEffect(() => {
         const handleResize = () => setWidth(window.innerWidth)
         window.addEventListener('resize', handleResize)
-        console.log('useDeviceType -> width', width)
         return () => window.removeEventListener('resize', handleResize)
-    }, [])
+    }, [width])
 
     useEffect(() => {
         if (width >= 1280) {

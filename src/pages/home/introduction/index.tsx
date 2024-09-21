@@ -1,5 +1,4 @@
 import { Wrapper } from '@app-components'
-import React from 'react'
 import MobileImage from '@app-assets/images/image-web-3-mobile.jpg'
 import DesktopImage from '@app-assets/images/image-web-3-desktop.jpg'
 import { useDeviceType } from '@app-hooks'
@@ -11,7 +10,6 @@ export default function Introduction() {
     if (DeviceType !== 'mobile') {
       return DesktopImage
     }
-
     return MobileImage
   }
 

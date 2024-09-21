@@ -1,4 +1,3 @@
-import React from 'react'
 import Logo from '@app-assets/logo.svg'
 
 type Props = {
@@ -6,13 +5,6 @@ type Props = {
 }
 
 export default function Desktop(props: Props) {
-  const Data = [
-    'Home',
-    'New',
-    'Popular',
-    'Trending',
-    'Categories',
-  ]
 
   const renderNavItem = (value: string, key: number) => (
     <li key={key} className='body text-gunmetal hover:text-vermillion-light transition-colors duration-150 ease-in cursor-pointer'>{value}</li>
@@ -21,7 +13,7 @@ export default function Desktop(props: Props) {
   const renderContent = () => {
     return (
       <ul className='flex flex-row gap-10'>
-        {Data.map(renderNavItem)}
+        {props.data.map(renderNavItem)}
       </ul>
     )
   }

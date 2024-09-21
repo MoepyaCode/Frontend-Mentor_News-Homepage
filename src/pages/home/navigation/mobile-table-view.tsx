@@ -17,7 +17,6 @@ export default function MobileTableView(props: Props) {
   }
 
   useEffect(() => {
-    console.log('isMenuOpen', isMenuOpen)
   }, [isMenuOpen])
 
   const renderNavItem = (value: string, key: number) => (

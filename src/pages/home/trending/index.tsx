@@ -1,6 +1,5 @@
 import { Images } from '@app-assets/images'
 import { Wrapper } from '@app-components'
-import { title } from 'process'
 
 export default function Trending() {
   type DataType = {
