@@ -22,6 +22,10 @@
         @apply font-extrabold text-[20px] leading-[24px]
     }
 
+    .heading-xs {
+        @apply font-extrabold text-[18px] leading-[24px]
+    }
+
     .body {
         @apply font-normal text-[15px] leading-[26px]
     }

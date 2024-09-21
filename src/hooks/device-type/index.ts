@@ -7,13 +7,14 @@ export function useDeviceType() {
     useEffect(() => {
         const handleResize = () => setWidth(window.innerWidth)
         window.addEventListener('resize', handleResize)
-        return window.removeEventListener('resize', handleResize)
+        console.log('useDeviceType -> width', width)
+        return () => window.removeEventListener('resize', handleResize)
     }, [])
 
     useEffect(() => {
         if (width >= 1280) {
             setDeviceType('desktop')
-        } else if (width >= 768) {
+        } else if (width >= 640) {
             setDeviceType('tablet')
         } else {
             setDeviceType('mobile')
