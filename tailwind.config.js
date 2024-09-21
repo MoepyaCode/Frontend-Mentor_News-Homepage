@@ -8,7 +8,25 @@ export default {
     backgroundColor: theme => ({
       ...theme('colors'),
     }),
-    extend: {},
+    extend: {
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+      },
+      colors: {
+        white: {
+          almost: '#FFFDFA'
+        },
+        blue: {
+          'dark-space': '#00001A',
+        },
+        gunmetal: '#5E607A',
+        vermillion: {
+          light: '#F15D51',
+        },
+        silver: '#C5C6CE',
+        yellow: '#E9AA52'
+      }
+    },
   },
   plugins: [],
 }

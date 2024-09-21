@@ -1,6 +1,28 @@
 /* Add Google fonts below */
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .heading-xl {
+        @apply font-extrabold text-[56px] leading-[56px]
+    }
+
+    .heading-l {
+        @apply font-bold text-[40px] leading-[40px]
+    }
+
+    .heading-m {
+        @apply font-bold text-[32px] leading-[32px]
+    }
+
+    .heading-s {
+        @apply font-extrabold text-[20px] leading-[24px]
+    }
+
+    .body {
+        @apply font-normal text-[15px] leading-[26px]
+    }
+}
